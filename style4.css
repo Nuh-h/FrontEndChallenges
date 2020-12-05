@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	background: url("images/bg-pattern-top.svg") top left no-repeat, url("images/bg-pattern-bottom.svg") bottom right no-repeat;
+	background-size:50% 50%;
+	padding:10%;
+	background-color:hsl(185, 75%, 39%);
+	margin:200px auto;
+}
+main {
+	color: #050708;
+	margin:0 auto;
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+}
+.card {
+	opacity:90%;
+	margin:0 auto;
+	margin-bottom:10px;
+	max-width:300px;
+	border-radius:15px;
+	filter: drop-shadow(0 0 3px #333);
+	justify-content:center;
+	overflow:hidden;
+}
+.card div {
+	background-color:white;
+	width: auto;
+	display:flex;
+	justify-content:space-around;
+	/*float: left;*/
+	/*justify-content:flex-between;*/
+    /*filter: drop-shadow(0 0 3px #333);*/  
+}
+.bg-cover{
+	background: url("images/bg-pattern-card.svg");
+	height:115px;
+}
+
+.profile {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	border-bottom:1px solid #d3d4d3;
+	padding-bottom:15px;
+}
+.profile div{
+	/*background-color:#eff1ef;*/
+	position: relative;
+	justify-content:center;
+}
+.profile .avatar{
+	margin-bottom:-40px;
+	top:-55px;
+	background:none;
+}
+.avatar img{
+ 	/*width:30%;*/
+	border-radius: 60px;
+	border: 5px solid #f7f7f7;
+	/*position: relative;*/
+	/*left: 35%;*/
+}
+.name, .age {
+	padding:0 10px;
+}
+.name,.stats-data{
+	font-size:18px;
+	font-weight: 700;
+	display:flex;
+	justify-content:space-evenly;
+}
+
+.location,.age{
+	font-size:16px;
+	font-weight:400;
+	margin-bottom:5px;
+}
+.stats {
+	border-top: 1% solid gray;
+	padding:10px;
+}
+.stats-description{
+	font-size: 12px;
+	font-weight: 400;
+	display:flex;
+	justify-content:space-evenly;
+}
+.stats ul{
+    list-style-type:none;
+    padding-left: 0em;
+    margin:10px;
+}
+
+/* @media screen and (max-width:375px){
+
+	.card {
+		width:auto;
+	}
+	.profile{
+		justify-content:center;
+		align-items:center;
+	}
+	.profile img{
+		left:0;
+		width:90px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+    .profile {
+    	padding-top:15px
+	}
+} */
