@@ -8,9 +8,7 @@ body {
 	background: url("images/bg-pattern-top.svg") top left no-repeat, url("images/bg-pattern-bottom.svg") bottom right no-repeat;
 	background-size:50% 50%;
 	background-color:hsl(185, 75%, 39%);
-	margin:200px auto;
-}
-main {
+	margin:25% 25%;
 	color: #050708;
 	font-family: 'Kumbh Sans', sans-serif;
 	font-size: 15px;
@@ -22,16 +20,12 @@ main {
 	max-width:300px;
 	border-radius:15px;
 	filter: drop-shadow(0 0 3px #333);
-/* 	justify-content:center; */
 	overflow:hidden;
 }
 .card div {
 	background-color:white;
 	display:flex;
 	justify-content:space-around;
-	/*float: left;*/
-	/*justify-content:flex-between;*/
-    /*filter: drop-shadow(0 0 3px #333);*/  
 }
 .bg-cover{
 	background: url("images/bg-pattern-card.svg");
@@ -41,12 +35,10 @@ main {
 .profile {
 	display:flex;
 	flex-direction:column;
-/* 	justify-content:center; */
 	border-bottom:1px solid #d3d4d3;
 	padding-bottom:15px;
 }
 .profile div{
-	/*background-color:#eff1ef;*/
 	position: relative;
 	justify-content:center;
 }
@@ -56,11 +48,8 @@ main {
 	background:none;
 }
 .avatar img{
- 	/*width:30%;*/
 	border-radius: 60px;
 	border: 5px solid #f7f7f7;
-	/*position: relative;*/
-	/*left: 35%;*/
 }
 .name, .age {
 	padding:0 10px;
@@ -92,24 +81,3 @@ main {
     padding-left: 0em;
     margin:10px;
 }
-
-/* @media screen and (max-width:375px){
-
-	.card {
-		width:auto;
-	}
-	.profile{
-		justify-content:center;
-		align-items:center;
-	}
-	.profile img{
-		left:0;
-		width:90px;
-		display:flex;
-		justify-content:center;
-		align-items:center;
-	}
-    .profile {
-    	padding-top:15px
-	}
-} */
