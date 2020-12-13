@@ -1,0 +1,101 @@
+/*style for faq accordion card from front end mentor.*/
+html{
+	font-family: 'Kumbh Sans', sans-serif;
+	background:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    color:hsl(240, 6%, 50%);
+    height:100vh;
+}
+body {
+    font-size:12px;
+    display:flex;
+    flex-direction:column;
+    margin:80px;
+}
+
+h2 {
+	color:hsl(238, 29%, 16%);
+	padding:0;
+}
+
+.container{
+	width:85%;
+	background-color:white;
+	overflow:hidden;
+	display:flex;
+	padding:40px;
+	padding-left:0;
+	margin:0 auto;
+	border-radius:25px;
+}
+.container div{
+	display:flex;
+	justify-content: space-between;
+}
+.visuals{
+	margin-left:-80px;
+	display:flex;
+	padding:30px;
+	padding-left:0;
+}
+.mailbox{
+	position:absolute;
+	margin-top:139px;
+	margin-left:-40px;
+	z-index:2;
+}
+.pattern{
+	margin-left:-495px;
+	margin-top:-365px;
+	position:absolute;
+	z-index:0;
+}
+.woman{
+	z-index:1;
+}
+.faq {
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	padding:40px;
+}
+.qna {
+	margin:0 auto;
+	padding-left:0;
+	border-bottom:1px solid hsl(240, 5%, 91%);
+	padding:10px 0;
+	width:100%;
+}
+.qna li {
+	font-weight:400;
+	list-style-type:none;
+
+}
+.qna li img{
+	float:right;
+}
+
+li:first-of-type{
+	padding: 7px 0;
+	color:hsl(237, 12%, 33%);
+}
+li:first-of-type:hover {
+	color:hsl(14, 88%, 65%);
+	cursor:pointer;
+}
+li:first-of-type:focus{
+	font-weight:700;
+	outline:none;
+}
+li:first-of-type:focus img{
+	transform:rotate(180deg);
+	transition:0.5s;
+}
+.answer{
+	height:0;
+	overflow:hidden;
+	font-size:10px;
+}
+li:first-of-type:focus ~ .answer{
+	transition:0.5s;
+	height:100%;
+}
