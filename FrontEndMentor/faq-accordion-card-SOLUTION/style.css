@@ -1,62 +1,72 @@
 /*style for faq accordion card from front end mentor.*/
 html{
-	font-family: 'Kumbh Sans', sans-serif;
-	background:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
-    color:hsl(240, 6%, 50%);
-    height:100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    color:hsl(0deg 0% 99%);
+    height:106vh;
+    margin-bottom:auto;
+    display:flex;
+    justify-content:center;
 }
 body {
     font-size:12px;
     display:flex;
+    justify-content:center;
     flex-direction:column;
-    margin:80px;
-}
-
-h2 {
-	color:hsl(238, 29%, 16%);
-	padding:0;
-}
+    margin:0px 0px;
+    color:hsl(238, 29%, 16%);
+    font-size:10px;
+    width:80%;
+    height:90vh;
+}	
 
 .container{
-	width:85%;
+	width:90%;
 	background-color:white;
 	overflow:hidden;
 	display:flex;
+	postion:relative;
 	padding:40px;
-	padding-left:0;
-	margin:0 auto;
-	border-radius:25px;
+	border-radius:20px;
 }
-.container div{
-	display:flex;
-	justify-content: space-between;
-}
+
+
 .visuals{
-	margin-left:-80px;
-	display:flex;
-	padding:30px;
-	padding-left:0;
+	display:inline-block;
+	align-items:center;
+	display:relative;
+	width:50%;
 }
-.mailbox{
-	position:absolute;
-	margin-top:139px;
-	margin-left:-40px;
-	z-index:2;
-}
-.pattern{
-	margin-left:-495px;
-	margin-top:-365px;
-	position:absolute;
-	z-index:0;
-}
-.woman{
+.visuals .woman{
+	width:400px;
+	height:300px;
+	right:110px;
+	position:relative;
 	z-index:1;
 }
+.mailbox{
+	width:150px;
+	height:150px;
+	top:305px;
+	right:75px;
+	position:relative;
+	z-index:2;
+}
+.visuals .pattern{
+	width:770px;
+	height:730px;
+	position:relative;
+	right:480px;
+	top:-570px;
+	z-index:0;
+}
+
 .faq {
 	display:flex;
 	flex-direction:column;
-	width:100%;
-	padding:40px;
+	width:80%;
+	padding:10px 30px;
+	font-size:12;
 }
 .qna {
 	margin:0 auto;
@@ -68,6 +78,8 @@ h2 {
 .qna li {
 	font-weight:400;
 	list-style-type:none;
+	font-size:10;
+	color:hsl(240, 6%, 50%);
 
 }
 .qna li img{
@@ -76,7 +88,7 @@ h2 {
 
 li:first-of-type{
 	padding: 7px 0;
-	color:hsl(237, 12%, 33%);
+    color:hsl(237, 12%, 33%);
 }
 li:first-of-type:hover {
 	color:hsl(14, 88%, 65%);
@@ -94,8 +106,63 @@ li:first-of-type:focus img{
 	height:0;
 	overflow:hidden;
 	font-size:10px;
+
 }
 li:first-of-type:focus ~ .answer{
 	transition:0.5s;
 	height:100%;
+}
+
+@media screen and (max-width:668px){
+	.html{
+
+	}
+	.body{
+
+	}
+	.container{
+		display:flex;
+		flex-direction:row;
+		overflow:visible;
+		padding:0;
+		margin:0;
+	}
+	.visuals{
+		width:0%;
+		padding-bottom:100px;
+	}
+	.visuals .woman{
+		width:150px;
+		height:100px;
+		top:-60px;
+		right:-50px;
+		position:relative;
+		z-index:1;
+	}
+	.mailbox{
+		width:60px;
+		height:60px;
+		top:35px;
+		right:-50px;
+		position:relative;
+		z-index:2;
+	}
+	.visuals .pattern{
+		width:160px;
+		height:140px;
+		position:relative;
+		right:-45px;
+		top:-190px;
+		z-index:0;
+	}
+	.faq{
+		width:100%;
+		padding:70px 20px;
+	}
+	h2 {
+		display:flex;
+		justify-content:center;
+		align-text:center;
+	}
+
 }
