@@ -1,14 +1,17 @@
 /*style for faq accordion card from front end mentor.*/
 html{
-    font-family: 'Kumbh Sans', sans-serif;
-    background:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+	font-family: 'Kumbh Sans', sans-serif;
+	background:linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
     color:hsl(0deg 0% 99%);
-    height:106vh;
+    height:auto;
     margin-bottom:auto;
+    padding-bottom:100px;
+    padding-top:0;
     display:flex;
     justify-content:center;
 }
 body {
+	height:fit-content;;
     font-size:12px;
     display:flex;
     justify-content:center;
@@ -16,10 +19,14 @@ body {
     margin:0px 0px;
     color:hsl(238, 29%, 16%);
     font-size:10px;
-    width:80%;
+    max-width:700px;
     height:90vh;
+    padding:0;
 }	
-
+h2 {
+	font-size:25px;
+	margin:15px 0;
+}
 .container{
 	width:90%;
 	background-color:white;
@@ -27,9 +34,8 @@ body {
 	display:flex;
 	postion:relative;
 	padding:40px;
-	border-radius:20px;
+	border-radius:20px;	
 }
-
 
 .visuals{
 	display:inline-block;
@@ -65,7 +71,7 @@ body {
 	display:flex;
 	flex-direction:column;
 	width:80%;
-	padding:10px 30px;
+	padding:0px 30px;
 	font-size:12;
 }
 .qna {
@@ -78,7 +84,7 @@ body {
 .qna li {
 	font-weight:400;
 	list-style-type:none;
-	font-size:10;
+	font-size:12px;
 	color:hsl(240, 6%, 50%);
 
 }
@@ -114,50 +120,60 @@ li:first-of-type:focus ~ .answer{
 }
 
 @media screen and (max-width:668px){
-	.html{
-
+	html{
+		padding:100px 0;
 	}
-	.body{
-
-	}
+    body{
+    	margin-top:5%;
+    	display:flex;
+    	margin:10%;
+    	margin-right:0%;
+    }
 	.container{
+		max-width:340px;
 		display:flex;
 		flex-direction:row;
 		overflow:visible;
 		padding:0;
-		margin:0;
 	}
 	.visuals{
-		width:0%;
+		width:0;
 		padding-bottom:100px;
 	}
 	.visuals .woman{
-		width:150px;
-		height:100px;
-		top:-60px;
-		right:-50px;
+		content:url('images/illustration-woman-online-mobile.svg');
+		width:230px;
+		height:auto;
+		top:-95px;
+		left:25px;
 		position:relative;
 		z-index:1;
+		visibility:;
 	}
 	.mailbox{
-		width:60px;
+		display:none;
+/* 		width:60px;
 		height:60px;
-		top:35px;
-		right:-50px;
+		top:33px;
+		left:75px;
 		position:relative;
-		z-index:2;
+		z-index:2; */
 	}
 	.visuals .pattern{
-		width:160px;
-		height:140px;
+		content:url('images/bg-pattern-mobile.svg');
+		width:205px;
+		height:90px;;
 		position:relative;
-		right:-45px;
-		top:-190px;
+		left:50px;
+		top:-175px;
 		z-index:0;
 	}
 	.faq{
-		width:100%;
+		margin-top:30px;
+		width:auto;
 		padding:70px 20px;
+		margin-bottom:0;
+		padding-bottom:40px;
 	}
 	h2 {
 		display:flex;
