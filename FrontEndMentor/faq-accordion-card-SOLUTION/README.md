@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ Accordion Card - SOLUTION
 
-![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-preview.jpg)
+![Design preview for the FAQ Accordion Card coding challenge](./design/desktop-design.jpg)
 
 ## The challenge
 
